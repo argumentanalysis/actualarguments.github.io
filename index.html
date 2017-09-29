@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+        <script src="filter.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="filter">
+            <form method="get">
+                <input type="checkbox" name="modus-tollens" value="modus-tollens"
+                       id="modus-tollens" onclick="displayTag('.modus-tollens')"
+                       checked/>
+                Modus Tollens
+                <input type="checkbox" name="reductio" value="reductio"
+                id="reductio" onclick="displayTag('.reductio')"
+                checked/>
+                Reductio
+            </form>
+        </div>
+        <div class="argument modus-tollens">
+            <p>If you can't be with the one you want, you ought to love the one you're with. But you can't love the one you're with, and ought implies can, so you can be with the one you want.</p>
+        </div>
+        <div class="argument reductio">
+            <p>Suppose, for the sake of argument, that humans will figure out how to time travel in the future. If so, then time travlers would already have visited us from the future. But they haven't. So humans won't figure out how to time travel in the future.</p>
+        </div>
+        <div class="argument modus-tollens">
+            <p>If you are happy and you know it, then you clap your hands. But you don't clap your hands. So either you aren't happy or you are, but you don't know it.</p>
+        </div>
+    </body>
+</html>
